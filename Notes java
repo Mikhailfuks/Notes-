@@ -1,0 +1,47 @@
+import ....
+
+public class NoTakerActivity extends AppCompatActivity
+
+EditText editText_title,editText_notes
+Image view imageView_save
+Notes notes;
+/// Setting up an extension for notes
+@override
+protected void onCreate(bundle,saveInstanceState) {
+    super.onCreate(bundle,saveInstanceState)
+SetValueView(R.layout.activityNo_Taker)
+/// Editing text to view images
+edittext_title=FindViewById(R.Id.editText_title)
+editText=FindViewById((R.Id.editText_notes)
+/// It is necessary to make notes so that the reader can understand the notes
+imageView_save=FindViewById(imageSave_view)
+imageView_save=setOnclickListener(new Click OnclickListener)
+@Override
+public void OnClck(View,View) }
+String title=editText_title.getText().toStrint()
+String description=editText_notes.get.Text()toString();
+
+if(description isEmpty())
+
+return;
+}
+SimpleDateFormat format=newSimpleToFormat
+}
+
+SimpleDateFormat formatter=new SimpleDateFormat
+Date date=new Date();
+/// Specify the date written in the notes
+notes=new notes();
+notes.setTitle(Title)
+notes.setNotes(description);
+notes.setDate(formatter.format(date));
+///You need to use this to fulfill your intentions
+Intent intent=new Intent();
+IntentPutExtra("note"notes)
+setResult(Activity.Result.Ok.intent)
+finish;
+}
+});
+]
+}
+}
