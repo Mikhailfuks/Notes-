@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Calculator
+public static void main(String[]args)
+double num1;
+double num2;
+char op;
+Scanner reader=new Scanner(Scanner.in)
+System.out.println("Enter two numbers")
+num1=reader.nextDouble();
+num2=reader.nextDouble();
+System.out.println("/nEnter an operator(+,-,*,/):")
+op=reader.next().CharAt(0);
+switch(op); {
+case'+':ans=num1+num2
+break;
+case'-'':ans=num1-num2
+break;
+case'*':ans=num1*num2
+break;
+case'/'':ans=num1/num2
+break;
+case'!'':ans=num1!nun2
+break;
+case'%':ans=num1%num2
+break;
+case'<'num1<num2
+break;
+case">'num1>num2
+default:System.out.printf("Error!Enter correct opetator")
+return;
+}
+System.out.println(/nThe result is given as follows/n")
+}
+}
