@@ -1,0 +1,136 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+///importing a collection to sort the data
+
+Public class Memory Game {
+    public static void main(String[]args)
+}
+Scanner Scanner= new Scanner(System.in);
+ArrayList<String>cards=new ArrayList<>();
+cards.add("A")
+cards.add("A")
+cards.add("B")
+cards.add("B")
+cards.add("C")
+cards.add("C")
+cards.add("D")
+cards.add("D")
+cards.add("E")
+cardS.add("E")
+cards.add("F")
+cards.add("F")
+cards.add("G")
+cards.add("G")
+Collections.shuffle(car= new String[cards.size()]; 
+        boolean[] flipped ds); 
+  /// Add the cards and give them a name
+        String[] board = new boolean[cards.size()]; 
+        int pairsFound = 0; 
+     while (pairsFound < 4) { 
+            printBoard(board); 
+            int firstIndex = getCardIndex( 
+                scanner, board, flipped, 
+                "Enter index of first card to flip:"); 
+            board[firstIndex] = cards.get(firstIndex); 
+            flipped[firstIndex] = true; 
+            printBoard(board); 
+            int secondIndex = getCardIndex( 
+                scanner, board, flipped, 
+                "Enter index of second card to flip:"); 
+            board[secondIndex] = cards.get(secondIndex); 
+            flipped[secondIndex] = true; 
+
+            if (cards.get(firstIndex) 
+                    .equals(cards.get(secondIndex))) { 
+                System.out.println("You found a pair!"); 
+                pairsFound++; 
+            } 
+            else { 
+                System.out.println( 
+                    "Sorry, those cards don't match."); 
+                board[firstIndex] = " "; 
+                board[secondIndex] = " "; 
+                flipped[firstIndex] = false; 
+                flipped[secondIndex] = false; 
+            } 
+        } 
+        // The result is that we are winning
+        System.out.println("Congratulations, you won!"); 
+    } 
+  
+    public static int getCardIndex(Scanner scanner, 
+                                   String[] board, 
+                                   boolean[] flipped, 
+                                   String prompt) 
+                               
+    { 
+        int index; 
+        while (true) { 
+            System.out.println(prompt); 
+            index = scanner.nextInt(); 
+            if (index < 0 || index >= board.length) { 
+                System.out.println( 
+                    "Invalid index, try again."); 
+            } 
+            else if (flipped[index]) { 
+                System.out.println( 
+                    "Card already flipped, try again."); 
+            } 
+            else { 
+                break; 
+            } 
+        } 
+        return index; 
+    } 
+  /// we leave the while loop and output the desired value
+    public static void printBoard(String[] board) 
+    { 
+        for (int i = 0; i < board.length; i++) { 
+            System.out.print("| " + board[i] + " "); 
+        } 
+        System.out.println("|"); 
+    } 
+/// Using the for loop, we can use it to set the length of the string
+    public Scanner getScanner() {
+        return Scanner;
+    }
+/// returning the scanner value
+    public void setScanner(Scanner scanner) {
+        Scanner = scanner;
+    }
+/// reading the incoming scanner data
+    public ArrayList<String> getCards() {
+        return cards;
+    } 
+/// sorting the array in ascending order
+    public void setCards(ArrayList<String> cards) {
+        this.cards = cards;
+    }
+    public String[] getBoard() {
+        return board;
+    }
+/// we use the getBoard variable and return the board value
+    public void setBoard(String[] board) {
+        this.board = board;
+    }
+/// changing the value of the object field and defining the scope
+    public boolean[] getFlipped() {
+        return flipped;
+    }
+    public void setFlipped(boolean[] flipped) {
+        this.flipped = flipped;
+    }
+
+    public int getPairsFound() {
+        return pairsFound;
+    }
+/// output pairs of arrays
+    public void setPairsFound(int pairsFound) {
+        this.pairsFound = pairsFound;
+    } 
+}
+/// The result of the found pairs is a set of arrays we need
+
+
+
